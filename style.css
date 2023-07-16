@@ -99,7 +99,6 @@ li::before {
 
 .homescreen__bg {
     z-index: -10;
-    position: absolute;
     width: 32em;
     height: 32em;
     top: 0;
@@ -167,10 +166,50 @@ li::before {
     left: 1em;
 }
 
+.scooter-colors {
+    transform: translateY(-10em);
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    grid-gap: 5em;
+    justify-content: center;
+}
+
+.cooter-colors__color {
+    width: 16.5em;
+    height: 16.5em;
+}
+
+.cooter-colors__color p {
+    margin: 0;
+    bottom: 0.1em;
+    right: 0.1em;
+    color: white;
+    font-size: 5rem;
+    opacity: 0.5;
+    line-height: 1;
+}
 
 @media screen and (max-width: 1400px) {
     .features {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 16.5em);
+    }
+
+    .scooter-colors {
+        grid-gap: 2em;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .scooter-colors {
+        grid-template-columns: repeat(2, 16.5em);
+        justify-items: start;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .scooter-colors {
+        transform: none;
     }
 }
 
@@ -181,6 +220,10 @@ li::before {
 
     .information-list {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .scooter-colors {
+        grid-template-columns: repeat(1, 16.5em);
     }
 }
 
