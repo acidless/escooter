@@ -30,6 +30,23 @@ hr {
     border: none;
 }
 
+ul {
+    list-style: none;
+}
+
+li {
+    position: relative;
+    margin-left: 4em;
+}
+
+li::before {
+    position: absolute;
+    top: 50%;
+    left: -4em;
+    transform: translateY(-50%);
+    content: url("./assets/list.svg");
+}
+
 .btn {
     font-size: 0.8rem;
     border-radius: 0.5em;
@@ -129,6 +146,11 @@ hr {
     flex: 1;
 }
 
+.information-list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1em;
+}
+
 @media screen and (max-width: 1400px) {
     .features {
         grid-template-columns: repeat(3, 1fr);
@@ -138,6 +160,10 @@ hr {
 @media screen and (max-width: 768px) {
     .features {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .information-list {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
