@@ -32,6 +32,7 @@ hr {
 
 ul {
     list-style: none;
+    padding-left: 0;
 }
 
 li {
@@ -67,10 +68,21 @@ li::before {
     background: #42454A;
 }
 
+.btn-border {
+    border: 2px solid #42454A;
+    padding: 1em 3em;
+}
+
+.btn-border:hover {
+    border: 2px solid #42454A;
+    background: #42454A;
+    color: white;
+}
+
 .shadow, .btn {
-    -webkit-box-shadow: 0px 12px 25px -10px rgba(34, 60, 80, 0.2);
-    -moz-box-shadow: 0px 12px 25px -10px rgba(34, 60, 80, 0.2);
-    box-shadow: 0px 12px 25px -15px rgba(34, 60, 80, 0.2);
+    -webkit-box-shadow: 0 12px 25px -10px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0 12px 25px -10px rgba(34, 60, 80, 0.2);
+    box-shadow: 0 12px 25px -15px rgba(34, 60, 80, 0.2);
 }
 
 .rounded-none {
@@ -90,9 +102,8 @@ li::before {
     position: absolute;
     width: 32em;
     height: 32em;
-    top: 50%;
+    top: 0;
     right: 0;
-    transform: translateY(-50%);
     background: #DBDBDB;
     border-top-left-radius: 100%;
     border-bottom-left-radius: 100%;
@@ -101,7 +112,7 @@ li::before {
 .slider-control span {
     font-family: 'Calistoga', cursive;
     font-size: 9.25rem;
-    text-shadow: 0px 0px 5px #000000;
+    text-shadow: 0 0 5px #000000;
     color: white;
 }
 
@@ -150,6 +161,12 @@ li::before {
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 1em;
 }
+
+.gallery span {
+    top: 1em;
+    left: 1em;
+}
+
 
 @media screen and (max-width: 1400px) {
     .features {
