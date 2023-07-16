@@ -11,31 +11,116 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 <header class="py-4">
-    <div class="container mx-auto row align-items-center">
-        <div class="col-1">
-            <img src="./assets/logo.svg" alt="">
+    <div class="container mx-auto row align-items-center flex-column flex-lg-row">
+        <div class="col-12 col-lg-1 mb-3 mb-lg-0 d-flex justify-content-center align-items-center">
+            <img src="./assets/logo.svg" alt="Logo">
         </div>
-        <nav class="offset-3 col-4 d-flex justify-content-between">
-            <div class="d-flex align-items-center">
+        <nav class="offset-lg-3 col-12 col-lg-4 d-flex justify-content-center justify-content-lg-between mb-3 mb-lg-0">
+            <div class="d-flex align-items-center px-3">
                 <a class="text-uppercase text-decoration-none me-1" href="#">Products</a>
                 <button class="btn btn-link d-flex align-items-center"><img src="./assets/more.svg" alt=""></button>
             </div>
-            <div class="d-flex align-items-center">
+            <div class="d-flex align-items-center px-3">
                 <a class="text-uppercase text-decoration-none" href="#">Gallery</a>
             </div>
-            <div class="d-flex align-items-center">
+            <div class="d-flex align-items-center px-3">
                 <a class="text-uppercase text-decoration-none" href="#">Contact</a>
             </div>
         </nav>
-        <div class="offset-2 col-2">
+        <div class="ms-0 ms-lg-auto col-auto">
             <button class="btn btn-light text-uppercase me-2">Log In</button>
             <button class="btn btn-dark text-uppercase">Sign Up</button>
         </div>
     </div>
 </header>
+<main>
+    <section class="py-6">
+        <div class="container mx-auto">
+            <div class="row">
+                <div class="col-12 col-xl-5 mb-5 mb-xl-0">
+                    <h1 class="text-uppercase fw-light mb-6">Let's ride<br><span class="fw-bold">the future.</span></h1>
+                    <div class="row mb-5">
+                        <div class="col-7">
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row mb-5">
+                        <div class="col-8">
+                            <p class="fs-5">
+                                Simple and sleek design with users in mind.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-sm-6 mb-3">
+                            <a href="#" class="d-flex text-decoration-none align-items-center">
+                                <button class="btn btn-dark py-4 me-4 rounded-none">
+                                    <img src="assets/vector.svg" alt="Vector">
+                                </button>
+                                <span class="fw-bold fs-4 text-black">Buy now</span>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-5 offset-0 offset-sm-1 offset-xl-0">
+                            <div class="d-flex align-items-center">
+                                <p class="text-break me-1 flex-grow-sm-1 flex-grow-0 mb-0">Watch our video how it works</p>
+                                <button class="btn btn-link position-relative flex-grow-sm-1 flex-grow-0" style="left:10px;">
+                                    <img src="./assets/play.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-7 position-relative">
+                    <img class="w-100 w-xl-110 h-auto" src="./assets/scooter.png" alt="">
+                </div>
+                <div class="homescreen__bg d-none d-xl-block"></div>
+                <div class="row slider-control mb-5">
+                    <div class="offset-0 offset-md-6 offset-lg-8 offset-xl-9 col-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="row align-items-center justify-content-end">
+                            <div class="col-12 col-sm-6 d-flex justify-content-center">
+                                <span>01</span>
+                            </div>
+                            <div class="slider-control__buttons offset-0 offset-md-2 col-12 col-sm-4 d-flex justify-content-center">
+                                <button><img src="./assets/more.svg" alt=""></button>
+                                <button><img src="./assets/more.svg" alt=""></button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="features">
+                    <div class="shadow feature rounded py-4">
+                        <p class="text-center fw-bold"><span class="fs-1">105 </span>lbs</p>
+                        <p class="text-center fs-6">Net Weight</p>
+                    </div>
+                    <div class="shadow feature rounded py-4">
+                        <p class="text-center fw-bold"><span class="fs-1">26 </span>mph</p>
+                        <p class="text-center fs-6">Top Speed</p>
+                    </div>
+                    <div class="shadow feature rounded py-4">
+                        <p class="text-center fw-bold"><span class="fs-1">38 </span>miles</p>
+                        <p class="text-center fs-6">Max Range</p>
+                    </div>
+                    <div class="shadow feature rounded py-4">
+                        <p class="text-center fw-bold"><span class="fs-1">89 </span>nm</p>
+                        <p class="text-center fs-6">Max Torques</p>
+                    </div>
+                    <div class="shadow feature rounded py-4">
+                        <p class="text-center fw-bold"><span class="fs-1">22% </span>slope</p>
+                        <p class="text-center fs-6">Hill Climbing</p>
+                    </div>
+                    <div class="shadow feature rounded py-4">
+                        <p class="text-center fw-bold"><span class="fs-1">2x</span></p>
+                        <p class="text-center fs-6">Hydralic Disc Brakes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
 </body>
 </html>

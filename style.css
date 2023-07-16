@@ -15,8 +15,19 @@ a:hover {
     color: #000;
 }
 
+h1 {
+    font-size: 5rem;
+}
+
 header {
     border-bottom: 1px solid #EAE8F3;
+}
+
+hr {
+    height: 4px;
+    background: #42454A;
+    opacity: 1;
+    border: none;
 }
 
 .btn {
@@ -42,5 +53,105 @@ header {
 .shadow, .btn {
     -webkit-box-shadow: 0px 12px 25px -10px rgba(34, 60, 80, 0.2);
     -moz-box-shadow: 0px 12px 25px -10px rgba(34, 60, 80, 0.2);
-    box-shadow: 0px 12px 25px -10px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 12px 25px -15px rgba(34, 60, 80, 0.2);
+}
+
+.rounded-none {
+    border-radius: 0;
+}
+
+.py-6 {
+    padding: 6rem 0;
+}
+
+.mb-6 {
+    margin-bottom: 6rem;
+}
+
+.homescreen__bg {
+    z-index: -10;
+    position: absolute;
+    width: 32em;
+    height: 32em;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background: #DBDBDB;
+    border-top-left-radius: 100%;
+    border-bottom-left-radius: 100%;
+}
+
+.slider-control span {
+    font-family: 'Calistoga', cursive;
+    font-size: 9.25rem;
+    text-shadow: 0px 0px 5px #000000;
+    color: white;
+}
+
+.slider-control__buttons button {
+    margin: 0;
+    background: none;
+    padding: 1em 1.5em;
+    border: 3px solid #42454A;
+}
+
+.slider-control__buttons button img {
+    width: 1rem;
+    height: auto;
+}
+
+.slider-control__buttons button:first-child {
+    border-top-left-radius: 5em;
+    border-bottom-left-radius: 5em;
+    border-right: none;
+}
+
+.slider-control__buttons button:first-child img {
+    transform: rotateZ(90deg);
+}
+
+.slider-control__buttons button:last-child {
+    border-top-right-radius: 5em;
+    border-bottom-right-radius: 5em;
+}
+
+.slider-control__buttons button:last-child img {
+    transform: rotateZ(-90deg);
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 3em;
+}
+
+.feature {
+    flex: 1;
+}
+
+@media screen and (max-width: 1400px) {
+    .features {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .features {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1em;
+    }
+
+    .slider-control span {
+        font-size: 6rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
 }
