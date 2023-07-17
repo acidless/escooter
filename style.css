@@ -6,6 +6,10 @@
     color: #42454A;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 a {
     color: #42454A;
     font-size: 0.9rem;
@@ -66,6 +70,7 @@ li::before {
 
 .btn-dark {
     background: #42454A;
+    border: 2px solid #42454A;
 }
 
 .btn-border {
@@ -189,6 +194,60 @@ li::before {
     line-height: 1;
 }
 
+.testimonials {
+    background: #FAFAFA;
+}
+
+.testimonials__wrapper {
+    padding: 0 5em;
+}
+
+.testimonial {
+    border: 1px solid #D8D8D8;
+}
+
+.testimonial.active {
+    background: #fff;
+    border: none;
+}
+
+.testimonials__buttons button {
+    padding: 1.5em 1.25em;
+}
+
+.testimonials__buttons button:hover {
+    background: #D8D8D8;
+}
+
+.testimonials__buttons button:last-child {
+    color: white;
+}
+
+.form-control {
+    background: #FAFAFA;
+    padding: 1em 2em;
+}
+
+footer {
+    background: #42454A;
+}
+
+footer * {
+    color: #fff;
+}
+
+.footer__image {
+    left: 0;
+    bottom: 3em;
+}
+
+.copyright {
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: max-content;
+}
+
 @media screen and (max-width: 1400px) {
     .features {
         grid-template-columns: repeat(3, 16.5em);
@@ -203,6 +262,19 @@ li::before {
     .scooter-colors {
         grid-template-columns: repeat(2, 16.5em);
         justify-items: start;
+    }
+
+    .testimonials__wrapper {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        grid-gap: 3em;
+    }
+
+    .testimonial:last-child {
+        grid-column: 1 / 3;
+        place-self: center;
+        width: 50%;
     }
 }
 
@@ -224,6 +296,16 @@ li::before {
 
     .scooter-colors {
         grid-template-columns: repeat(1, 16.5em);
+    }
+
+    .testimonials__wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .testimonial:last-child {
+        grid-column: 1;
+        place-self: auto;
+        width: auto;
     }
 }
 
