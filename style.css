@@ -166,6 +166,11 @@ li::before {
     grid-column-gap: 1em;
 }
 
+.accessories__img {
+    position: absolute;
+    width: auto;
+}
+
 .gallery span {
     top: 1em;
     left: 1em;
@@ -259,6 +264,11 @@ footer * {
 }
 
 @media screen and (max-width: 1200px) {
+    .accessories__img {
+        position: relative;
+        width: 100%;
+    }
+
     .scooter-colors {
         grid-template-columns: repeat(2, 16.5em);
         justify-items: start;
